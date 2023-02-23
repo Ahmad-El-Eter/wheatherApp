@@ -21,8 +21,8 @@ APIs: o site utiliza APIs de fornecedores de dados meteorológicos para obter in
 
 # Imagens do projeto
 
-<img src ="siteimg/1.png">
-<img src ="siteimg/2.png">
+<img src="siteimg/1.png">
+<img src="siteimg/2.png">
 
 # Como contribuir para este site
 
