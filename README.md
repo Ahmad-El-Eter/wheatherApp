@@ -15,8 +15,8 @@ Busca de cidades: os usuários podem pesquisar o clima de qualquer cidade do mun
 Previsão do tempo: além das informações climáticas atuais, o site de clima também fornece previsões sobre a temperatura, umidade, velocidade do vento e outras variáveis climáticas.
 
 # Tecnologias utilizadas
-HTML/CSS: para a estruturação e estilização do site.
-JavaScript: para a criação de interatividade e dinamismo do site.
+HTML/CSS: para a estruturação e estilização do site. <br>
+JavaScript: para a criação de interatividade e dinamismo do site. <br>
 APIs: o site utiliza APIs de fornecedores de dados meteorológicos para obter informações em tempo real e previsões do tempo.
 
 # Imagens do projeto
