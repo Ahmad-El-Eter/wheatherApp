@@ -21,9 +21,9 @@ APIs: o site utiliza APIs de fornecedores de dados meteorológicos para obter in
 
 # Imagens do projeto
 
+<img src ="siteimg/1.png">
+<img src ="siteimg/2.png">
 
 # Como contribuir para este site
 
 Se você deseja contribuir para o site de clima, pode enviar um e-mail para ahmad.aleterbr@gmail.com. Estou sempre aberto a sugestões e ideias para melhorar o projeto.
-
-<img src="images/clear.png">
