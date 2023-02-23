@@ -6,15 +6,17 @@ const error404 = document.querySelector('.not-found');
 
 search.addEventListener('click', () => {
 
-    const APIKey = 'e6d22f60c815c6e77c3e167513f6dfc1';
+    const APIKey = '728b0ee6df5687559812bd3169ad77b7';
     const city = document.querySelector('.search-box input').value;
 
-    if(city === '')
-        return; 
+    if (city === '')
+        return;
 
-        fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${APIKey}`).then(response => response.json()).then(json => {
+    fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${APIKey}`)
+        .then(response => response.json())
+        .then(json => {
 
-            if(json.cod === '404'){
+            if (json.cod === '404') {
                 container.style.height = '400px';
                 weatherBox.style.display = 'none';
                 weatherDetails.style.display = 'none';
@@ -22,7 +24,7 @@ search.addEventListener('click', () => {
                 error404.classList.add('fadeIn');
                 return;
             }
-            
+
             error404.style.display = 'none';
             error404.classList.remove('fadeIn');
 
@@ -32,11 +34,11 @@ search.addEventListener('click', () => {
             const humidity = document.querySelector('.weather-details .humidity span');
             const wind = document.querySelector('.weather-details .wind span');
 
-            switch (json.weather[0].main){
+            switch (json.weather[0].main) {
                 case 'Clear':
                     image.src = 'images/clear.png';
                     break;
-                    
+
                 case 'Rain':
                     image.src = 'images/rain.png';
                     break;
@@ -48,15 +50,15 @@ search.addEventListener('click', () => {
                 case 'Clouds':
                     image.src = 'images/cloud.png';
                     break;
-                    
+
                 case 'Haze':
                     image.src = 'images/mist.png';
                     break;
-                
+
                 default:
                     image.src = '';
             }
-             
+
             temperature.innerHTML = `${parseInt(json.main.temp)}<span>°C</span>`;
             description.innerHTML = `${json.weather[0].description}`;
             humidity.innerHTML = `${json.main.humidity}%`;
@@ -69,5 +71,7 @@ search.addEventListener('click', () => {
             container.style.height = '590px';
 
 
-        })
-})
+        });
+
+
+});
